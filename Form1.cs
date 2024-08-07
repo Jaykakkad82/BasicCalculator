@@ -11,5 +11,49 @@ namespace BasicCalculator
         {
 
         }
+
+        private void Add_Click(object sender, EventArgs e)
+        {
+            double firstInput = Convert.ToDouble(FirstNumText.Text);
+            double secondInput = Convert.ToDouble(SecondNumText.Text);
+
+            double output = firstInput + secondInput;
+
+            OutputNumText.Text = output.ToString();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            double firstInput = Convert.ToDouble(FirstNumText.Text);
+            double secondInput = Convert.ToDouble(SecondNumText.Text);
+
+            double output = firstInput - secondInput;
+
+            OutputNumText.Text = output.ToString();
+        }
+
+        private void label2_Click(object sender, EventArgs e) { 
+        }
+
+        private void MulButton_Click(object sender, EventArgs e)
+        {
+            double firstInput = Convert.ToDouble(FirstNumText.Text);
+            double secondInput = Convert.ToDouble(SecondNumText.Text);
+
+            double output = firstInput * secondInput;
+
+            OutputNumText.Text = output.ToString();
+        }
+
+        private void DivButton_Click(object sender, EventArgs e)
+        {
+            double firstInput = Convert.ToDouble(FirstNumText.Text);
+            double secondInput = Convert.ToDouble(SecondNumText.Text);
+
+            double output = firstInput / secondInput;
+
+            OutputNumText.Text = output.ToString();
+
+        }
     }
 }
